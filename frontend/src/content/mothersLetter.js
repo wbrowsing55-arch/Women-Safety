@@ -1,0 +1,1 @@
+export const mothersLetter = `When you don’t know what to do, how to dress for the place and environment, or how to respond to a situation, pause and ask yourself:\n\nIf Mom stood here,\nWhat would I hope she would choose?\nWhat would make me proud?\n\nLet Mom be your mirror,\nLet wisdom guide your way.\nBe the woman your child looks up to,\nAnd dreams of becoming someday.`;

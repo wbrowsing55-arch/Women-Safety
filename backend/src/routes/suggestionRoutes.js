@@ -1,0 +1,2 @@
+import {Router} from 'express';import {createSuggestion} from '../controllers/suggestionController.js';import {authenticate} from '../middleware/authenticate.js';import {requireAdmin} from '../middleware/requireAdmin.js';import {adminSuggestions} from '../controllers/adminController.js';
+const router=Router();router.post('/',authenticate,createSuggestion);router.get('/',authenticate,requireAdmin,adminSuggestions);export default router;

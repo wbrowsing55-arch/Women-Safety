@@ -1,0 +1,2 @@
+import Suggestion from '../models/Suggestion.js';
+export async function createSuggestion(req,res,next){try{const message=String(req.body.message||'').trim();if(!message)return res.status(400).json({message:'Please enter a suggestion.'});if(message.length>3000)return res.status(400).json({message:'Suggestion must be 3,000 characters or fewer.'});await Suggestion.create({user:req.user._id,message});res.status(201).json({message:'Thank you. Your suggestion has been submitted for review.'})}catch(e){next(e)}}

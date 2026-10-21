@@ -1,0 +1,2 @@
+import {Router} from 'express';import {publicList,adminList,create,update,remove} from '../controllers/scratchCardController.js';import {authenticate} from '../middleware/authenticate.js';import {requireAdmin} from '../middleware/requireAdmin.js';
+const router=Router();router.get('/',publicList);router.get('/admin',authenticate,requireAdmin,adminList);router.post('/',authenticate,requireAdmin,create);router.patch('/:id',authenticate,requireAdmin,update);router.delete('/:id',authenticate,requireAdmin,remove);export default router;

@@ -1,0 +1,2 @@
+import {Router} from 'express';import {createComment,listComments,moderateComment} from '../controllers/commentController.js';import {authenticate} from '../middleware/authenticate.js';import {requireAdmin} from '../middleware/requireAdmin.js';
+const router=Router();router.post('/',authenticate,createComment);router.get('/',authenticate,requireAdmin,listComments);router.patch('/:id',authenticate,requireAdmin,moderateComment);export default router;
