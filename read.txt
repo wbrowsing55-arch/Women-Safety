@@ -1,0 +1,25 @@
+.../Women Safety/frontend $ cd "$HOME/Development/MERN/Women Safety/backend" || exit 1
+~/.../Women Safety/backend $ npm run dev                          
+> self-governed-girl-backend@1.0.0 dev
+> node --watch src/server.js                                                                                                        MongoDB Atlas connected.
+API listening on http://localhost:5000
+
+
+
+
+
+cd "$HOME/Development/MERN/Women Safety/backend" || exit 1
+npm run dev
+
+
+
+cd "$HOME/Development/MERN/Women Safety/frontend" || exit 1
+npm run dev -- --host 0.0.0.0
+
+
+
+code-server --bind-addr 127.0.0.1:8080
+
+48fed51eb190efba6c3b2a7f
+
+bhtj hdne qowl ifun
